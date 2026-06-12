@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏃 20-Day Job Marathon
+# 🏃 20-Day Problem Solving Marathon
 
 ### _Daily problem solving challenge — 5 problems a day, 20 days straight._
 
