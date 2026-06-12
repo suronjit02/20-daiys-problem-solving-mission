@@ -87,7 +87,7 @@ The job market is competitive. This 20-day marathon is designed to sharpen probl
 
 ## 👨‍💻 About Me
 
-**Suronjit** — Full-stack developer in training, currently focused on AI-assisted development and building SaaS products.
+**Suronjit** — Full-stack MERN web developer developer, currently focused on AI-assisted development and building SaaS products.
 
 - 🔗 LinkedIn: [@suronjit02](https://www.linkedin.com/in/suronjit02/)
 - 🔗 Portfolio: [@suronjit02](https://suronjit02.netlify.app/)
