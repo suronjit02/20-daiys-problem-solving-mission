@@ -7,6 +7,9 @@ Hint: Use the formula: expected sum = n*(n+1)/2, then subtract actual sum. */
 const findMissing = (arr, n) => {
   const sum = (n * (n + 1)) / 2;
 
-  for(let i = 0; i)
+  const actualSum = arr.reduce((acc, val) => acc + val, 0);
 
+  return sum - actualSum;
 };
+
+console.log(findMissing([1, 2, 4, 5], 5));
