@@ -4,3 +4,34 @@ Example:
 myPromiseAll([p1, p2, p3]).then(results => console.log(results));
 Hint: Track resolved count and results array; reject on first failure.
  */
+
+const myPromiseAll = (promises) => {
+  return new Promise((resolve, reject) => {
+    const results = [];
+    let resolvedCount = 0;
+
+    promises.forEach((promise, index) => {
+      promise
+        .then((result) => {
+          results[index] = result;
+          resolvedCount++;
+
+          if (resolvedCount === promises.length) {
+            resolve(results);
+          }
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  });
+};
+
+// Example usage:
+const p1 = Promise.resolve(1);
+const p2 = Promise.resolve(2);
+const p3 = Promise.resolve(3);
+
+myPromiseAll([p1, p2, p3]).then((results) => {
+  console.log(results); // Output: [1, 2, 3]
+});
